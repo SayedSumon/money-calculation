@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="my-6">
+        <h1 class="text-center text-4xl font-medium">Money Master <span class="text-green-700">&dollar;</span></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-2 gap-8">
+            <div><img class="p-14" src="https://cdn.pixabay.com/photo/2021/06/27/14/42/money-6369029_1280.png" alt="">
+            </div>
+            <div class="bg-slate-200 rounded-lg m-8 text-1xl text-center space-y-3 p-6">
+                <h1 class="mt-11 font-medium">Income</h1>
+                <label for="income">Income: </label>
+                <input type="text" id="income" name="income" class="p-1 rounded-md" placeholder="$ 00">
+
+                <h1 class="font-medium">Expenses</h1>
+
+                <label for="food-cost">Food: </label>
+                <input type="text" id="food-cost" name="food-cost" class="p-1 rounded-md" placeholder="$ 00"><br>
+                <label for="rent-cost">Rent: </label>
+                <input type="text" id="rent-cost" name="rent-cost" class="p-1 rounded-md" placeholder="$ 00"><br>
+                <label for="cloth-cost">Clothes: </label>
+                <input type="text" id="cloth-cost" name="cloth-cost" class="p-1 rounded-md" placeholder="$ 00"><br>
+
+                <button class="bg-blue-600 rounded-lg text-white p-2 hover:bg-blue-500" id="calculate-btn">Calculate</button>
+
+                <h1 class="font-medium">Total Expenses: <span id="expenses">00</span></h1>
+                <h1 class="font-medium">Balance: <span id="balance">00</span></h1>
+
+                <label for="saving">Save: </label>
+                <input type="text" name="saving" id="saving" class="p-1 rounded-md w-1/6 text-center mr-2" placeholder="$ 00">
+                <span>%</span>
+                <button class="bg-blue-600 rounded-lg text-white py-2 hover:bg-blue-500 px-6 ml-2" id="saving-btn">Save</button>
+
+                <h1 class="font-medium">Save Amount: <span id="total-saving">00</span></h1>
+                <h1 class="font-medium">Remaining Balance: <span id="remaining-balance">00</span></h1>
+
+
+            </div>
+        </section>
+    </main>
+    <!-- javascript link -->
+    <script src="js/calculation.js"></script>
+</body>
+
+</html>
